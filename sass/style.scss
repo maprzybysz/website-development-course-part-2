@@ -1,17 +1,29 @@
-$width: 200px;
-$height: 200px;
-$bg-color: tomato;
-$second-bg-color: gold;
-
-div {
-	width: $width;
-	height: $height;
+$colors: (
+	top: royalblue,
+	center: lime,
+	bottom: tomato,
+);
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-
-.one {
-	background-color: $bg-color;
+body {
+	background-color: #333;
+	font-family: sans-serif;
 }
-
-.two {
-	background-color: $second-bg-color;
+.square {
+	margin: 50px;
+	width: 200px;
+	height: 200px;
+	border: 5px solid black;
+}
+.item1 {
+	background-color: map-get($colors, top);
+}
+.item2 {
+	background-color: map-get($colors, center);
+}
+.item3 {
+	background-color: map-get($colors, bottom);
 }
