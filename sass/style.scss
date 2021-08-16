@@ -1,36 +1,17 @@
-$first-color: lime;
+$width: 200px;
+$height: 200px;
+$bg-color: tomato;
+$second-bg-color: gold;
 
-body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
-	background-color: #333;
-	font-family: sans-serif;
+div {
+	width: $width;
+	height: $height;
 }
-.size {
-	margin: 20px auto;
-	width: 50%;
-	height: 60px;
-	border: 3px solid black;
-	border-radius: 25px;
+
+.one {
+	background-color: $bg-color;
 }
-.color1 {
-	background-color: $first-color;
-}
-.color2 {
-	background-color: royalblue;
-}
-.color3 {
-	background-color: $first-color;
-}
-.color4 {
-	background-color: royalblue;
-}
-.color5 {
-	background-color: $first-color;
-}
-.color6 {
-	background-color: royalblue;
+
+.two {
+	background-color: $second-bg-color;
 }

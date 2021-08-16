@@ -1,51 +1,13 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  background-color: #333;
-  font-family: sans-serif;
+div {
+  width: 200px;
+  height: 200px;
 }
 
-.size {
-  margin: 20px auto;
-  width: 50%;
-  height: 60px;
-  border: 3px solid black;
-  border-radius: 25px;
+.one {
+  background-color: tomato;
 }
 
-.color1 {
-  background-color: lime;
-}
-
-.color2 {
-  background-color: royalblue;
-}
-
-.color3 {
-  background-color: lime;
-}
-
-.color4 {
-  background-color: royalblue;
-}
-
-.color5 {
-  background-color: lime;
-}
-
-.color6 {
-  background-color: royalblue;
+.two {
+  background-color: gold;
 }
 /*# sourceMappingURL=style.css.map */
