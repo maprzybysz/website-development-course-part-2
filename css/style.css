@@ -15,17 +15,15 @@ body {
   width: 200px;
   height: 200px;
   border: 5px solid black;
+  background-color: gold;
+  border-radius: 25px;
 }
 
-.item1 {
-  background-color: royalblue;
-}
-
-.item2 {
+.success {
   background-color: lime;
 }
 
-.item3 {
+.warning {
   background-color: tomato;
 }
 /*# sourceMappingURL=style.css.map */

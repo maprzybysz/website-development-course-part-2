@@ -1,8 +1,10 @@
-$colors: (
-	top: royalblue,
-	center: lime,
-	bottom: tomato,
-);
+@mixin addons {
+	background-color: gold;
+	border-radius: 25px;
+}
+@mixin color($bg-color) {
+	background-color: $bg-color;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -12,18 +14,17 @@ body {
 	background-color: #333;
 	font-family: sans-serif;
 }
+
 .square {
 	margin: 50px;
 	width: 200px;
 	height: 200px;
 	border: 5px solid black;
+	@include addons;
 }
-.item1 {
-	background-color: map-get($colors, top);
+.success {
+	@include color(lime);
 }
-.item2 {
-	background-color: map-get($colors, center);
-}
-.item3 {
-	background-color: map-get($colors, bottom);
+.warning {
+	@include color(tomato);
 }
