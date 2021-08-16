@@ -1,38 +1,51 @@
-:root {
-	--first-color: lime;
-	--size: 60px;
-}
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	height: 100vh;
-	background-color: #333;
-	font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background-color: #333;
+  font-family: sans-serif;
 }
+
 .size {
-	margin: 20px auto;
-	width: 50%;
-	height: 60px;
-	border: 3px solid black;
-	border-radius: 25px;
+  margin: 20px auto;
+  width: 50%;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 25px;
 }
+
 .color1 {
-	background-color: var(--first-color);
+  background-color: lime;
 }
+
 .color2 {
-	background-color: royalblue;
+  background-color: royalblue;
 }
+
 .color3 {
-	background-color: var(--first-color);
+  background-color: lime;
 }
+
 .color4 {
-	background-color: royalblue;
+  background-color: royalblue;
 }
+
 .color5 {
-	background-color: var(--first-color);
+  background-color: lime;
 }
+
 .color6 {
-	background-color: royalblue;
+  background-color: royalblue;
 }
+/*# sourceMappingURL=style.css.map */
