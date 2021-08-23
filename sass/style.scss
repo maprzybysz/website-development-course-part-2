@@ -10,22 +10,6 @@ body {
 	color: #fff;
 	background-color: #333;
 }
-table,
-tr,
-td {
-	border: 1px solid black;
-}
-td {
-	width: 300px;
-	height: 100px;
-}
-
-p:nth-child(2n) {
+p:nth-last-child(5) {
 	color: lime;
-}
-tr:nth-child(odd) {
-	background-color: #ddd;
-}
-tr:nth-child(even) {
-	background-color: #888;
 }
