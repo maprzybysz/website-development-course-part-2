@@ -10,27 +10,21 @@ body {
 	color: #fff;
 	background-color: #333;
 }
-li:nth-child(even) {
-	color: greenyellow;
-}
-span:first-of-type {
-	color: yellow;
-}
-// .test p:first-child {
-// 	color: yellow;
+// p {
+// 	margin: 100px;
+// 	text-align: center;
 // }
-// .test p:last-child {
-// 	color: yellow;
+// p::before {
+// 	content: 'Cześć ';
+// 	color: lime;
 // }
-.test {
-	p:first-child,
-	p:last-child {
-		color: yellow;
-	}
-}
-.title {
-	transition: color 0.3s;
-}
-.title:hover {
-	color: rebeccapurple;
+// p::after {
+// 	content: '! :) ';
+// 	color: lime;
+// }
+.square {
+	margin: 100px auto;
+	width: 300px;
+	height: 300px;
+	color: tomato;
 }
