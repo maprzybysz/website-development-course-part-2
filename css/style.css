@@ -13,19 +13,25 @@ body {
   background-color: #333;
 }
 
-span {
-  display: block;
+li:nth-child(even) {
+  color: greenyellow;
 }
 
-h5 {
-  color: tomato;
-}
-
-span:nth-of-type(even) {
-  color: violet;
-}
-
-span:nth-last-of-type(odd) {
+span:first-of-type {
   color: yellow;
+}
+
+.test p:first-child,
+.test p:last-child {
+  color: yellow;
+}
+
+.title {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: rebeccapurple;
 }
 /*# sourceMappingURL=style.css.map */
