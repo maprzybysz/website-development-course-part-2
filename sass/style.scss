@@ -10,6 +10,15 @@ body {
 	color: #fff;
 	background-color: #333;
 }
-p:nth-last-child(5) {
-	color: lime;
+span {
+	display: block;
+}
+h5 {
+	color: tomato;
+}
+span:nth-of-type(even) {
+	color: violet;
+}
+span:nth-last-of-type(odd) {
+	color: yellow;
 }
