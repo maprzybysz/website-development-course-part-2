@@ -13,22 +13,52 @@ body {
   background-color: #333;
 }
 
-a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
+.square {
+  width: 400px;
+  height: 400px;
+  background-color: gold;
+  border: 3px solid black;
+  -webkit-animation: color 2s ease-in-out 0.5s infinite;
+          animation: color 2s ease-in-out 0.5s infinite;
 }
 
-p[class*='test'] {
-  color: gold;
+.square:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-a[href$='xls']::before {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  padding-left: 10px;
-  background: url("https://icons.iconarchive.com/icons/dakirby309/simply-styled/24/Microsoft-Excel-2013-icon.png") no-repeat;
+.two {
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes color {
+  0% {
+    width: 400px;
+    background-color: gold;
+  }
+  50% {
+    width: 800px;
+    background-color: royalblue;
+  }
+  100% {
+    width: 200px;
+    background-color: lime;
+  }
+}
+
+@keyframes color {
+  0% {
+    width: 400px;
+    background-color: gold;
+  }
+  50% {
+    width: 800px;
+    background-color: royalblue;
+  }
+  100% {
+    width: 200px;
+    background-color: lime;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,23 +10,35 @@ body {
 	color: #fff;
 	background-color: #333;
 }
-a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
+.square {
+	width: 400px;
+	height: 400px;
+	background-color: gold;
+	border: 3px solid black;
+	animation: color 2s ease-in-out 0.5s infinite;
 }
-// [href] {
-// 	color: gold;
-// }
-p[class*='test'] {
-	color: gold;
+.square:hover {
+	animation-play-state: paused;
 }
-a[href$='xls']::before {
-	content: '';
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	padding-left: 10px;
-	background: url('https://icons.iconarchive.com/icons/dakirby309/simply-styled/24/Microsoft-Excel-2013-icon.png')
-		no-repeat;
+.two {
+	animation-direction: alternate;
+}
+
+//animation: Nazwa/CZAS/Timing-function/DELAY/l. powtórzen / fill mode
+
+@keyframes color {
+	0% {
+		//from = 0%
+		width: 400px;
+		background-color: gold;
+	}
+	50% {
+		width: 800px;
+		background-color: royalblue;
+	}
+	100% {
+		//to = 100%
+		width: 200px;
+		background-color: lime;
+	}
 }
