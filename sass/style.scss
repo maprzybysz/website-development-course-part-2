@@ -10,35 +10,42 @@ body {
 	color: #fff;
 	background-color: #333;
 }
-.square {
-	width: 400px;
-	height: 400px;
-	background-color: gold;
-	border: 3px solid black;
-	animation: color 2s ease-in-out 0.5s infinite;
+.text {
+	position: absolute;
+	right: 20px;
+	line-height: 100px;
+	text-transform: uppercase;
+	border-bottom: 3px solid #000;
 }
-.square:hover {
-	animation-play-state: paused;
+.abc {
+	margin-bottom: 5px;
+	width: 50px;
+	height: 100px;
+	background-color: #000;
+	animation: test 2s;
+}
+.one {
+	animation-fill-mode: none;
 }
 .two {
-	animation-direction: alternate;
+	animation-fill-mode: forwards;
 }
-
-//animation: Nazwa/CZAS/Timing-function/DELAY/l. powtórzen / fill mode
-
-@keyframes color {
+.three {
+	animation-fill-mode: backwards;
+}
+.four {
+	animation-fill-mode: both;
+}
+@keyframes test {
 	0% {
-		//from = 0%
-		width: 400px;
-		background-color: gold;
+		width: 50px;
+		background-color: lime;
 	}
 	50% {
-		width: 800px;
 		background-color: royalblue;
 	}
 	100% {
-		//to = 100%
-		width: 200px;
-		background-color: lime;
+		width: 500px;
+		background-color: tomato;
 	}
 }
