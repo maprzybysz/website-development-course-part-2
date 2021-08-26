@@ -13,68 +13,72 @@ body {
   background-color: #333;
 }
 
-.text {
-  position: absolute;
-  right: 20px;
-  line-height: 100px;
-  text-transform: uppercase;
-  border-bottom: 3px solid #000;
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  -webkit-animation: square-animation 4s forwards;
+          animation: square-animation 4s forwards;
 }
 
-.abc {
-  margin-bottom: 5px;
-  width: 50px;
-  height: 100px;
-  background-color: #000;
-  -webkit-animation: test 2s;
-          animation: test 2s;
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: lime;
+  border-radius: 50%;
+  -webkit-animation: circle-animation 2s 4s;
+          animation: circle-animation 2s 4s;
 }
 
-.one {
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-}
-
-.two {
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-.three {
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-}
-
-.four {
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
-@-webkit-keyframes test {
+@-webkit-keyframes square-animation {
   0% {
-    width: 50px;
-    background-color: lime;
-  }
-  50% {
-    background-color: royalblue;
-  }
-  100% {
-    width: 500px;
+    width: 300px;
+    height: 300px;
     background-color: tomato;
   }
-}
-
-@keyframes test {
-  0% {
-    width: 50px;
-    background-color: lime;
-  }
   50% {
-    background-color: royalblue;
+    width: 600px;
+    height: 300px;
   }
   100% {
-    width: 500px;
+    width: 300px;
+    height: 600px;
+    background-color: gold;
+  }
+}
+
+@keyframes square-animation {
+  0% {
+    width: 300px;
+    height: 300px;
     background-color: tomato;
+  }
+  50% {
+    width: 600px;
+    height: 300px;
+  }
+  100% {
+    width: 300px;
+    height: 600px;
+    background-color: gold;
+  }
+}
+
+@-webkit-keyframes circle-animation {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
+  }
+}
+
+@keyframes circle-animation {
+  from {
+    background-color: lime;
+  }
+  to {
+    background-color: royalblue;
   }
 }
 /*# sourceMappingURL=style.css.map */
