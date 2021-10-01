@@ -1,4 +1,25 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
-	display: grid;
-	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+}
+section {
+	display: flex;
+	// flex-direction: row;
+	// flex-wrap: wrap;
+	flex-flow: row nowrap;
+}
+.square {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	font-size: 50px;
+	background-color: gold;
+	border: 3px solid black;
 }
