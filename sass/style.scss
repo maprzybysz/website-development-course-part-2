@@ -9,10 +9,18 @@ body {
 }
 section {
 	display: flex;
-	// flex-direction: row;
-	// flex-wrap: wrap;
-	flex-flow: row nowrap;
+	flex-wrap: wrap;
 }
+.one {
+	flex-direction: row;
+}
+.two {
+	flex-direction: row-reverse;
+}
+.three {
+	flex-direction: column-reverse;
+}
+
 .square {
 	display: flex;
 	justify-content: center;
