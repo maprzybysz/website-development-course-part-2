@@ -9,18 +9,14 @@ body {
 }
 section {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	// justify-content: flex-end;
+	// justify-content: flex-end;
+	// justify-content: center;
+	// justify-content: space-between;
+	// justify-content: space-around;
+	// justify-content: space-evenly;
 }
-.one {
-	flex-direction: row;
-}
-.two {
-	flex-direction: row-reverse;
-}
-.three {
-	flex-direction: column-reverse;
-}
-
 .square {
 	display: flex;
 	justify-content: center;
@@ -28,6 +24,17 @@ section {
 	width: 300px;
 	height: 300px;
 	font-size: 50px;
-	background-color: gold;
 	border: 3px solid black;
+}
+.one {
+	background-color: gold;
+}
+.two {
+	background-color: greenyellow;
+}
+.three {
+	background-color: royalblue;
+}
+.four {
+	background-color: tomato;
 }
