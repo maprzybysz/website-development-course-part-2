@@ -3,34 +3,54 @@
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
+	font-size: 50px;
 }
+
 section {
 	display: flex;
-	height: 600px;
-	flex-wrap: wrap;
-	// align-content: center;
-	// align-content: space-around;
-	// align-content: stretch;
+	margin: 20px 0;
+	height: 400px;
+	background-color: #789;
 }
-.square {
-	display: flex;
+.first {
 	justify-content: center;
 	align-items: center;
-	width: 25%;
-	border: 3px solid black;
 }
+.second {
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+.third {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+
 .one {
 	background-color: gold;
 }
+
 .two {
-	background-color: greenyellow;
+	background-color: lime;
 }
+
 .three {
 	background-color: royalblue;
 }
+
 .four {
 	background-color: tomato;
 }

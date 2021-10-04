@@ -8,29 +8,60 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #333;
+  font-size: 50px;
 }
 
 section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 20px 0;
+  height: 400px;
+  background-color: #789;
 }
 
-.square {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.first {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 25%;
-  border: 3px solid black;
+}
+
+.second {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.third {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
 }
 
 .one {
@@ -38,7 +69,7 @@ section {
 }
 
 .two {
-  background-color: greenyellow;
+  background-color: lime;
 }
 
 .three {
