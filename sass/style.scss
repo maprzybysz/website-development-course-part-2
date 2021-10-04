@@ -9,21 +9,17 @@ body {
 }
 section {
 	display: flex;
-	flex-direction: column;
-	// justify-content: flex-end;
-	// justify-content: flex-end;
-	// justify-content: center;
-	// justify-content: space-between;
-	// justify-content: space-around;
-	// justify-content: space-evenly;
+	height: 600px;
+	// align-items: stretch;
+	// align-items: flex-end;
+	// align-items: center;
+	align-items: baseline;
 }
 .square {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
-	height: 300px;
-	font-size: 50px;
+	width: 20%;
 	border: 3px solid black;
 }
 .one {
