@@ -10,16 +10,16 @@ body {
 section {
 	display: flex;
 	height: 600px;
-	// align-items: stretch;
-	// align-items: flex-end;
-	// align-items: center;
-	align-items: baseline;
+	flex-wrap: wrap;
+	// align-content: center;
+	// align-content: space-around;
+	// align-content: stretch;
 }
 .square {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20%;
+	width: 25%;
 	border: 3px solid black;
 }
 .one {
