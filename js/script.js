@@ -1,15 +1,6 @@
-const color = 'blue';
-let age = 24;
 const name = 'Mateusz';
-console.log(
-	'Cześć, mam na imie ' +
-		name +
-		' mam ' +
-		age +
-		' lat i mój ulubiony kolor to ' +
-		color
-);
+let age;
+age = 23;
+const favMeal = 'burgery';
 
-console.log(
-	`Cześć, mam na imię ${name}, mam ${age} lat i mój ulubiony kolor to ${color}`
-);
+console.log(`Mam na imię ${name} mam ${age} lat i lubię ${favMeal}`);
