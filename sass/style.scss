@@ -14,23 +14,24 @@ section {
 	display: flex;
 	margin: 20px 0;
 	height: 400px;
+	align-items: flex-end;
 }
 
 .square {
 	width: 150px;
-	height: 150px;
-	line-height: 150px;
+	// height: 150px;
+	// line-height: 150px;
 	text-align: center;
 }
 
 .one {
 	background-color: gold;
-	order: 2;
 }
 
 .two {
 	background-color: lime;
-	order: 5;
+	align-self: auto;
+	align-self: stretch;
 }
 
 .three {
