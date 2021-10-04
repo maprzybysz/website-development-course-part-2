@@ -14,26 +14,10 @@ section {
 	display: flex;
 	margin: 20px 0;
 	height: 400px;
-	background-color: #789;
-}
-.first {
-	justify-content: center;
-	align-items: center;
-}
-.second {
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: flex-end;
-}
-.third {
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .square {
-	width: 150px;
+	width: 300px;
 	height: 150px;
 	line-height: 150px;
 	text-align: center;
@@ -41,10 +25,14 @@ section {
 
 .one {
 	background-color: gold;
+	// flex-grow: 1;
+	flex-shrink: 0;
 }
 
 .two {
 	background-color: lime;
+	// flex-grow: 3;
+	flex-shrink: 0;
 }
 
 .three {
