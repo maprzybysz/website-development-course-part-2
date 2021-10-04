@@ -5,22 +5,58 @@
 }
 
 body {
+	margin: 50px;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 section {
 	display: flex;
 	margin: 20px 0;
-	height: 400px;
+	height: 300px;
+	border: 5px solid black;
+}
+.first {
+	flex-direction: column;
+	.two,
+	.four {
+		flex-grow: 1;
+	}
+}
+.second {
+	align-items: center;
+	justify-content: space-around;
+}
+.third {
+	.one {
+		order: 4;
+		flex-grow: 1;
+	}
+	.two {
+		order: 3;
+	}
+	.three {
+		order: 1;
+	}
+	.four {
+		order: 2;
+		flex-grow: 3;
+	}
+}
+.fourth {
+	flex-direction: row-reverse;
 	align-items: flex-end;
+	.two {
+		align-self: flex-start;
+	}
+	.three {
+		align-self: center;
+	}
 }
 
 .square {
-	width: 150px;
-	// height: 150px;
-	// line-height: 150px;
+	width: 200px;
 	text-align: center;
 }
 
@@ -30,8 +66,6 @@ section {
 
 .two {
 	background-color: lime;
-	align-self: auto;
-	align-self: stretch;
 }
 
 .three {
