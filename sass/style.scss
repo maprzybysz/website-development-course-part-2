@@ -25,12 +25,12 @@ section {
 
 .one {
 	background-color: gold;
-	// flex-basis: 300px;
-	flex: 1 1 300px;
+	order: 2;
 }
 
 .two {
 	background-color: lime;
+	order: 5;
 }
 
 .three {
