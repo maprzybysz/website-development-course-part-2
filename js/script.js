@@ -1,23 +1,12 @@
-let x = 8;
-let y = '8';
-let z = 9;
+let SCORE = 15 % 2;
+console.log(SCORE);
 
-/* 
- && - and
- || - or 
- ! = negation
+let NUM1 = 8;
+NUM1++;
+NUM1++;
+console.log(NUM1);
+let x = 5;
+let y = 10;
 
-
-*/
-
-if (5 > 4 && 3 > 0) {
-	console.log('👍');
-} else {
-	console.log('👎');
-}
-
-if (5 == '5' && 3 > 0) {
-	console.log('👍');
-} else {
-	console.log('👎');
-}
+console.log((x *= y));
+console.log((x /= y));
