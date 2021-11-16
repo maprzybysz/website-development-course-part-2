@@ -1,2 +1,5 @@
 const colors = ['red', 'green', 'blue'];
-console.log(colors[2]);
+
+for (let i = 0; i < colors.length; i++) {
+	console.log(`${i + 1}. ${colors[i]}`);
+}
