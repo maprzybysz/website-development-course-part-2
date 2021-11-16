@@ -1,11 +1,22 @@
-const button1 = document.querySelector('#btn1');
-const button2 = document.querySelector('.btn2');
+const btn1 = document.querySelector('#btn1');
+const btn2 = document.querySelector('.btn2');
+const square = document.querySelector('.color');
+const removeColor = document.querySelector('.remove-color');
 
-function handleClick() {
-	console.log('Click 1');
+function redColor() {
+	// square.classList.add('red');
+	// square.classList.remove('blue');
+	square.classList.toggle('red');
 }
-function add() {
-	console.log(2 + 2);
+function blueColor() {
+	// square.classList.add('blue');
+	// square.classList.remove('red');
+	square.classList.toggle('blue');
 }
-button1.addEventListener('click', handleClick);
-button2.addEventListener('click', add);
+function deleteColor() {
+	square.classList.remove('blue');
+	square.classList.remove('red');
+}
+btn1.addEventListener('click', redColor);
+btn2.addEventListener('click', blueColor);
+removeColor.addEventListener('click', deleteColor);
