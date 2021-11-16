@@ -1,12 +1,9 @@
-let SCORE = 15 % 2;
-console.log(SCORE);
+const passLength = 10;
 
-let NUM1 = 8;
-NUM1++;
-NUM1++;
-console.log(NUM1);
-let x = 5;
-let y = 10;
-
-console.log((x *= y));
-console.log((x /= y));
+if (passLength > 10) {
+	console.log('Masz bardzo dobre hasło!');
+} else if (passLength >= 5 && passLength <= 10) {
+	console.log('Masz dobre hasło');
+} else {
+	console.log('Masz słabe hasło...');
+}
