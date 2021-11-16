@@ -1,10 +1,11 @@
-const p = document.querySelector('p');
-const h1 = document.querySelector('h1');
-const pTest = document.querySelector('.test');
-const btn = document.querySelector('#btn');
-console.log(p);
+const button1 = document.querySelector('#btn1');
+const button2 = document.querySelector('.btn2');
 
-const li = document.querySelectorAll('li');
-console.log(li);
-
-const p2 = document.querySelectorAll('p');
+function handleClick() {
+	console.log('Click 1');
+}
+function add() {
+	console.log(2 + 2);
+}
+button1.addEventListener('click', handleClick);
+button2.addEventListener('click', add);
