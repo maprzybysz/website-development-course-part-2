@@ -6,6 +6,12 @@
 }
 
 body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+
+.item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,47 +21,62 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #333;
+  position: relative;
+  background-size: cover;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
-button {
-  padding: 10px 20px;
+.item1 {
+  height: 40px;
+  background-image: url("https://cdn.pixabay.com/photo/2019/06/07/10/44/sunset-4257963_960_720.jpg");
+}
+
+.item2 {
+  height: 300px;
+  background-image: url("https://cdn.pixabay.com/photo/2014/05/03/00/56/summerfield-336672_960_720.jpg");
+  background-position: center;
+}
+
+.show {
+  height: 300px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+section button {
+  margin: 0 30px;
+  padding: 10px 30px;
   background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 24px;
-  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid #00cfff;
+  color: #00cfff;
+  -webkit-box-shadow: 3px 3px 10px #00cfff;
+          box-shadow: 3px 3px 10px #00cfff;
+  font-size: 36px;
+  -webkit-transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, -webkit-box-shadow 0.3s;
+  transition: color 0.3s, box-shadow 0.3s;
+  transition: color 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
   cursor: pointer;
 }
 
-.btn2 {
-  margin-left: 30px;
+section button:hover {
+  color: #00ffae;
+  -webkit-box-shadow: 3px 3px 10px #00ffae;
+          box-shadow: 3px 3px 10px #00ffae;
 }
 
-.color {
-  margin: 50px auto;
-  width: 300px;
-  height: 300px;
-  background-color: gold;
-}
-
-.remove-color {
-  background-color: gold;
-  width: 90%;
-  color: #000;
-}
-
-.blue {
-  background-color: royalblue;
-}
-
-.red {
-  background-color: tomato;
+section .fas {
+  -webkit-transition: trasform 0.6s;
+  transition: trasform 0.6s;
 }
 /*# sourceMappingURL=style.css.map */

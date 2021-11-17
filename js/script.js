@@ -1,22 +1,15 @@
-const btn1 = document.querySelector('#btn1');
-const btn2 = document.querySelector('.btn2');
-const square = document.querySelector('.color');
-const removeColor = document.querySelector('.remove-color');
+const arrowIcon = document.querySelector('.fas');
+const btn = document.querySelector('.arrow');
+const img = document.querySelector('.item1');
 
-function redColor() {
-	// square.classList.add('red');
-	// square.classList.remove('blue');
-	square.classList.toggle('red');
+function showImage() {
+	img.classList.toggle('show');
+
+	if (img.classList.contains('show')) {
+		arrowIcon.style.transform = 'rotate(180deg)';
+	} else {
+		arrowIcon.style.transform = 'rotate(0)';
+	}
 }
-function blueColor() {
-	// square.classList.add('blue');
-	// square.classList.remove('red');
-	square.classList.toggle('blue');
-}
-function deleteColor() {
-	square.classList.remove('blue');
-	square.classList.remove('red');
-}
-btn1.addEventListener('click', redColor);
-btn2.addEventListener('click', blueColor);
-removeColor.addEventListener('click', deleteColor);
+
+btn.addEventListener('click', showImage);
