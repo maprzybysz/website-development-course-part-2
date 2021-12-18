@@ -13,6 +13,9 @@ body {
 	background-color: #444;
 	position: relative;
 }
+.blue-text {
+	color: $blue-color;
+}
 nav {
 	text-transform: uppercase;
 	a,
@@ -31,5 +34,43 @@ nav {
 	}
 	.active {
 		color: $blue-color;
+	}
+}
+header {
+	color: $white;
+	h1 {
+		text-transform: uppercase;
+	}
+	.hero-img {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/header-mini.jpg');
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: -1;
+	}
+	.hero-shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba($color: #000000, $alpha: 0.8);
+		z-index: -10;
+	}
+	.hero-text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 100%;
+		padding: 10px;
+		text-align: center;
+		z-index: 5;
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-img {
+		background-image: url('../img/header-big.jpg');
 	}
 }
