@@ -8,9 +8,9 @@
 }
 
 body {
+  position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: #444;
-  position: relative;
 }
 
 .blue-text {
@@ -21,14 +21,11 @@ nav {
   text-transform: uppercase;
 }
 
-nav a,
-nav i,
-nav .nav-link {
+nav .nav-link,
+nav i {
   color: #fff;
 }
 
-nav a:hover,
-nav i:hover,
 nav .nav-link:hover {
   color: #039dff;
 }
@@ -60,7 +57,7 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  z-index: -2;
 }
 
 header .hero-shadow {
@@ -92,7 +89,7 @@ header .hero-text {
 }
 
 @media (min-width: 1200px) {
-  .hero-img {
+  header .hero-img {
     background-image: url("../img/header-big.jpg");
   }
 }
