@@ -19,11 +19,17 @@ body {
 
 nav {
   text-transform: uppercase;
+  z-index: 1;
 }
 
 nav .nav-link,
-nav i {
+nav i,
+nav a {
   color: #fff;
+}
+
+nav a:hover {
+  color: #039dff;
 }
 
 nav .nav-link:hover {
@@ -57,7 +63,7 @@ header .hero-img {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -2;
+  z-index: 0;
 }
 
 header .hero-shadow {
@@ -86,6 +92,20 @@ header .hero-text {
   padding: 10px;
   text-align: center;
   z-index: 5;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .fa-chevron-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 30px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
 }
 
 @media (min-width: 1200px) {
