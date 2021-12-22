@@ -14,8 +14,19 @@ body {
 	background-color: #444;
 }
 
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .blue-text {
-	color: $blue-color;
+	color: $main-color;
 }
 
 .shadow-bg {
@@ -33,10 +44,10 @@ nav {
 		color: $white;
 	}
 	a:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 	.nav-link:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	.fa-bars {
@@ -48,7 +59,7 @@ nav {
 	}
 
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 
@@ -102,6 +113,20 @@ header {
 		font-size: 30px;
 		transform: translateX(-50%);
 		color: $white;
+	}
+}
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
 	}
 }
 
